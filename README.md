@@ -21,7 +21,8 @@
 
 ## screenshots
 
-![screenshot1](screenshots/Screenshot%20from%202024-12-05%2020-48-56.png)
-![screenshot1](screenshots/Screenshot%20from%202024-12-05%2020-49-05.png)
-![screenshot1](screenshots/Screenshot%20from%202024-12-05%2020-49-14.png)
+<img src="screenshots/Screenshot%20from%202024-12-05%2020-48-56.png" alt="screenshot1" width="500"/>
+<img src="screenshots/Screenshot%20from%202024-12-05%2020-49-05.png" alt="screenshot2" width="500"/>
+<img src="screenshots/Screenshot%20from%202024-12-05%2020-49-14.png" alt="screenshot3" width="500"/>
+
 
