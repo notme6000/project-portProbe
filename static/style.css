@@ -1,42 +1,33 @@
 @font-face{
     font-family: 'cyberpunk1';
-    src: url(cyber-punk-sd/Sdcyberpunkcitydemo-pgyBd.otf);
+    src: url(fonts/cyber-punk-sd/Sdcyberpunkcitydemo-pgyBd.otf);
 }
 
 @font-face{
     font-family: 'cyberpunk2';
-    src: url(cyber-rider/CyberwayRiders-lg97d.ttf);
+    src: url(fonts/cyber-rider/CyberwayRiders-lg97d.ttf);
 }
 
 @font-face{
     font-family: 'cyberpunk3';
-    src: url(glitch-robot-sd/Sdglitchrobotdemo-GOPdO.ttf);
+    src: url(fonts/glitch-robot-sd/Sdglitchrobotdemo-GOPdO.ttf);
 }
 
 .heading{
     font-family: cyberpunk1;
     font-size: 60px;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     font-weight: bolder;
-    color: #5cf03e;
+    color: red;
 }
 
 
 .app-body{
     display: flex;
     height: 100vh;
-    background-image: url(cyberpunk1.png);
+    background-image: url(bg-images/samurai2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-.form-body{
-    display: flex;
-    height: 100vh;
-    background-image: url(002.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    
 }
 
 .top-right-link {
@@ -63,11 +54,11 @@
 
 form {
     max-width: 400px;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     margin: auto;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 1px;
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(5px);
 }

@@ -8,7 +8,6 @@ class API:
         
     
     def start_port_scan(self,data):
-        print("the button is working")
         hostname = data.get("hostname")
         port = data.get("port")
         print(hostname,port)
@@ -23,6 +22,13 @@ class API:
         else:
             print("hostname is required!")
             
+    def start_vuln_scan(self, data):
+        print("the button is working")
+        hostname = data.get("hostname")
+        
+        if hostname:
+            command = f"nmap --script vuln {hostname}"
+        subprocess.run(["gnome-terminal", "-e", f"bash -c '{command}; exec bash'"])
         
         
     

@@ -13,6 +13,14 @@
 <body>
     <div class="d-flex flex-column justify-content-center align-items-center vh-100 app-body">
         <h1 class="heading text-center mb-4">vuln scan</h1>
+        <form>
+            <label for="hostname" style="font-size: 24px; font-weight: 900;">Hostname/IP Address:</label>
+            <input type="text" id="vulnhostname" name="hostname" placeholder="Enter hostname or IP" required>
+
+            <button id="startVulnScan" class="flex-fill mt-1 rounded my-button align-items-center"
+                style="color: white; background-color: black;">start scan
+            </button>
+        </form>
     </div>
     <button id="goHome" class="top-right-link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
             fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
@@ -22,6 +30,29 @@
 
     <script src="script.js"></script>
     <script>
+        document.getElementById('startVulnScan').addEventListener('click', async function () {
+            const hostname = document.getElementById('vulnhostname').value;
+
+            if (hostname) {
+                try {
+                    const data = { hostname };
+                    const result = await pywebview.api.start_vuln_scan(data);
+                    console.log(result);
+                } catch (error) {
+                    console.error('Error:', error);
+                    alert('An error occurred while starting the port scan.');
+                }
+            }
+             else {
+            
+                alert('Please provide a hostname or IP address.');
+            }
+        });
+        
+
+    
+
+
         document.getElementById('goHome').addEventListener('click', () => {
             window.location.href = 'index.html'
         });
