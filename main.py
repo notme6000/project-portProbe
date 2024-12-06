@@ -4,7 +4,7 @@ import subprocess
 
 class API:
     def on_button_pressed(self):
-        subprocess.run(["gnome-terminal", "-e", f"bash -c 'neofetch; exec bash'" ])
+        subprocess.run(["gnome-terminal", "-e", f"bash -c 'neofetch; exec bash'"])
         
     
     def start_port_scan(self,data):
